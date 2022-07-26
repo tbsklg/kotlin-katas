@@ -5,14 +5,14 @@ fun electionsWinners(votes: Array<Int>, k: Int): Int {
     }
 }
 
-fun findWinnerFrom(votes: Array<Int>, k: Int): Int {
+private fun findWinnerFrom(votes: Array<Int>, k: Int): Int {
     val maximumVote = votes.maxOrNull()!!
 
     return votes
         .count { vote -> vote + k > maximumVote }
 }
 
-fun findWinnerFrom(votes: Array<Int>): Int {
+private fun findWinnerFrom(votes: Array<Int>): Int {
     val maximumVote = votes.maxOrNull()!!
 
     return when (votes.count { vote -> vote == maximumVote }) {
