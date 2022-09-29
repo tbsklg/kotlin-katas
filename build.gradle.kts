@@ -14,7 +14,8 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
-    testImplementation ("org.assertj:assertj-core:3.23.1")
+    testImplementation("org.assertj:assertj-core:3.23.1")
+    testImplementation("org.hamcrest:hamcrest-all:1.3")
 }
 
 tasks.test {
