@@ -1,6 +1,6 @@
 object PasswordHider {
 
-    data class QueryParameter(val key: String, val value: String) {
+    class QueryParameter private constructor (val key: String, val value: String) {
 
         companion object {
             fun from(queryString: String): QueryParameter {
