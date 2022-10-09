@@ -1,5 +1,5 @@
 fun tribonacci(signature: DoubleArray, n: Int): DoubleArray {
-    if (n < 0) return doubleArrayOf()
+    if (n <= 0) return doubleArrayOf()
 
     val a = signature[0]
     val b = signature[1]
